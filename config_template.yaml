@@ -1,0 +1,39 @@
+# Commodity Quant — Claude Code Compatible v3.8
+# Copy to config.yaml
+
+analysts:
+  pigeon:
+    name: "信鸽"
+    model: "deepseek-v4-pro"
+    api_url: ""
+    api_key: ""
+    max_tokens: 2000
+    timeout_seconds: 60
+  oilwell:
+    name: "油井"
+    model: "deepseek-v4-pro"
+    api_url: ""
+    api_key: ""
+    max_tokens: 4000
+    timeout_seconds: 120
+  goldsmith:
+    name: "金匠"
+    model: "deepseek-v4-pro"
+    api_url: ""
+    api_key: ""
+    max_tokens: 4000
+    timeout_seconds: 120
+  seawatcher:
+    name: "观澜"
+    model: "deepseek-v4-pro"
+    api_url: ""
+    api_key: ""
+    max_tokens: 4000
+    timeout_seconds: 120
+  hawkeye:
+    name: "鹰眼"
+    model: "deepseek-v4-pro"
+    api_url: ""
+    api_key: ""
+    max_tokens: 4000
+    timeout_seconds: 180
