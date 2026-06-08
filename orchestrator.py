@@ -9,7 +9,7 @@ Usage:
   python orchestrator.py --date 2026-06-08 --run r001
 """
 
-import argparse, hashlib, subprocess, sys, yaml, requests
+import argparse, hashlib, sys, yaml, requests
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 
@@ -25,7 +25,7 @@ ANALYST_NAMES = {"oilwell": "油井", "goldsmith": "金匠", "seawatcher": "观�
 def load_config():
     p = BASE / "config.yaml"
     if not p.exists():
-        print("ERROR: config.yaml not found. Run: python pipeline/setup_wizard.py")
+        print("ERROR: config.yaml not found. Run: python setup_wizard.py")
         sys.exit(1)
     return yaml.safe_load(p.read_text(encoding="utf-8"))
 
