@@ -30,7 +30,7 @@ P5 🦅 Verify   → hawkeye self-audit → verification.md
 
 ```bash
 pip install -r pipeline/requirements.txt
-python pipeline/setup_wizard.py
+python setup_wizard.py
 python orchestrator.py --date 2026-06-08 --run r001
 ```
 
@@ -50,7 +50,7 @@ python orchestrator.py --date 2026-06-08 --run r001
 |---------|-------------|
 | **Chain Security Layer** | Hash chain + identity fingerprints |
 | **Evidence Quality Scoring** | 0-10 per citation |
-| **Automated Precheck** | precheck.py scans citations against snapshot |
+| **Automated Precheck** | Hawkeye agent scans all R1 claims against snapshot |
 | **Verifier** | Post-judgment compliance audit |
 | **Hard-Stop** | P0 fabrication ≥2 → REJECTED |
 
@@ -64,7 +64,7 @@ python orchestrator.py --date 2026-06-08 --run r001
 
 ```bash
 pip install -r pipeline/requirements.txt
-python pipeline/setup_wizard.py
+python setup_wizard.py
 python orchestrator.py --date 2026-06-08 --run r001
 ```
 
